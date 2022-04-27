@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/inputTV"
+            android:layout_width="252dp"
+            android:layout_height="50dp"
+            android:background="#3d3d43"
+            android:backgroundTint="#3d3d43"
+            android:lines="1"
+            android:maxLines="1"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/resultTV"
+            app:layout_constraintHorizontal_bias="0.944"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523" />
+
+        <TextView
+            android:id="@+id/resultTV"
+            android:layout_width="252dp"
+            android:layout_height="49dp"
+            android:background="#3d3d43"
+            android:lines="1"
+            android:maxLines="1"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.786" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="monospace"
+            android:text="m"
+            android:textAlignment="center"
+            android:textColor="#C62828"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/inputTV"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:text="ft"
+            android:textAlignment="center"
+            android:textColor="#C62828"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/resultTV"
+            app:layout_constraintHorizontal_bias="0.564"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/n9"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:rotationX="-21"
+            android:text="9"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/n8"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:rotationX="-21"
+            android:text="8"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/n7"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:rotationX="-21"
+            android:text="7"
+            app:cornerRadius="50sp" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/n6"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="6"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/n5"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="5"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/n4"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="4"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/AC"
+            style="@style/buttonOperator"
+            android:backgroundTint="#3d3d43"
+            android:onClick="allClear"
+            android:text="AC"
+            android:textColor="#C62828"
+            app:cornerRadius="50sp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/n3"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="3"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/n2"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="2"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/n1"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="1"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/C"
+            style="@style/buttonOperator"
+            android:backgroundTint="#3d3d43"
+            android:text="C"
+            android:textColor="#C62828"
+            app:cornerRadius="50sp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/nD0"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="00"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/n0"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="0"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/buttonNumber"
+            android:backgroundTint="#3d3d43"
+            android:text="."
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/buttonOperator"
+            android:backgroundTint="#3d3d43"
+            android:text="⋈"
+            android:textColor="#C62828"
+            app:cornerRadius="50sp" />
+    </LinearLayout>
+</LinearLayout>
